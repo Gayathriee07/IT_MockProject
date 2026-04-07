@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT Placement Preparation Portal</title>
+    <style>
+
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#f4f6f9;
+        }
+
+        /* ===== Banner Section ===== */
+        .banner{
+            position:relative;
+            height:300px;
+            background:url('banner.jpg') center/cover no-repeat;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+        }
+
+        .banner h1{
+            background:rgba(0,0,0,0.6);
+            padding:20px 40px;
+            border-radius:10px;
+        }
+
+        /* ===== Container ===== */
+        .container{
+            width:90%;
+            margin:40px auto;
+        }
+
+        h2{
+            color:#0a1f44;
+            margin-bottom:20px;
+        }
+
+        /* ===== Cards Layout ===== */
+        .cards{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .card{
+            position:relative;
+            width:250px;
+            height:180px;
+            border-radius:12px;
+            overflow:hidden;
+            cursor:pointer;
+        }
+
+        .card img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            transition:0.4s;
+        }
+
+        .card:hover img{
+            transform:scale(1.1);
+        }
+
+        /* Overlay */
+        .overlay{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.5);
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+        }
+
+        .overlay h3{
+            margin:0;
+            margin-bottom:10px;
+        }
+
+        .btn{
+            background:#0a1f44;
+            border:none;
+            padding:8px 15px;
+            color:white;
+            border-radius:6px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:#163b80;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- ===== Banner ===== -->
+    <div class="banner">
+        <h1>IT Placement Preparation Portal</h1>
+    </div>
+
+    <div class="container">
+
+        <!-- ===== IT Languages Section ===== -->
+        <h2>IT Placement Preparation</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="/home/bcs/Downloads/images.png">
+                <div class="overlay">
+                    <h3>Java</h3>
+                    <button class="btn">Start Mock Test</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="python.jpg">
+                <div class="overlay">
+                    <h3>Python</h3>
+                    <button class="btn">Start Mock Test</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="cpp.jpg">
+                <div class="overlay">
+                    <h3>C++</h3>
+                    <button class="btn">Start Mock Test</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="sql.jpg">
+                <div class="overlay">
+                    <h3>SQL</h3>
+                    <button class="btn">Start Mock Test</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===== Soft Skills Section ===== -->
+        <h2 style="margin-top:50px;">Soft Skills Preparation</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="communication.jpg">
+                <div class="overlay">
+                    <h3>Communication</h3>
+                    <button class="btn">Start Mock Test</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="hr.jpg">
+                <div class="overlay">
+                    <h3>HR Interview</h3>
+                    <button class="btn">Start Mock Test</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="aptitude.jpg">
+                <div class="overlay">
+                    <h3>Aptitude</h3>
+                    <button class="btn">Start Mock Test</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
